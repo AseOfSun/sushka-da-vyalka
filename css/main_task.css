@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+:root{
+    --bg-color: #39190D;
+    --bg-color-alpha0: #0b1d2600;
+    --accent-color: #E8CB99;
+    --text-color: #fff;
+    --scroll-behavior: smooth;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: var(--accent-color);
+    
+
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 300vh;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+header{
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.logo{
+  width: 64px;
+  letter-spacing: 20px;
+  line-height: 1.5;
+}
+
+.header-navigation nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+.header-navigation .account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.header-hero{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.header-hero .description{
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.pre-header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--accent-color);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.pre-line{
+    width: 72px;
+    height: 8px;
+    background: var(--accent-color);
+}
+
+h1{
+   font-size: 48px;
+    font-weight: 600;
+    text-transform: none;
+    line-height: 1.2; 
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    letter-spacing: 2px;
+    justify-content: left;
+    position: absolute;
+    left: 80px;
+    top: 290px;
+}
+
+.social-media span{
+    writing-mode: vertical-rl
+    ;
+}
+
+.slider{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.slider-elements{
+    width: 100%;
+    height: 720px;
+    display: flex;
+    overflow: hidden;
+    gap: 20%;
+}
+
+.element{
+    display: flex;
+    min-width: 100%;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.element figcaption{
+    padding: 114px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.big-number{
+    opacity: 0.1;
+    font-size: 240px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+h2{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.element figcaption a{
+    font-weight: 400;
+    color: var(--accent-color);
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.buttons button{
+    background: none;
+    padding: 20px;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    border-bottom: 2px solid var(--text-color);
+}
+.element:nth-child(2n){
+    flex-direction:row-reverse ;
+
+}
+.meat-fruit-vege{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1462px;
+    margin: 120px auto
+}
+
+.guide .pre-header{
+    margin: 23px 0px 60px;
+}
+
+.trails .pre-header{
+    margin: 23px 0px 33px;
+}
+
+.guide .persons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%
+}
+
+.guide .person{
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    max-width: 278px;
+}
+
+
+.guide .person-description{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.guide h4{
+    font-size: 22px;
+}
+
+.guide .role{
+    opacity: .44;
+    margin-top: 8px;
+}
+
+.region {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    max-width: 460px;
+}
+
+h5{
+    margin-bottom: 10px;
+}
+
+.tours p{
+    opacity: 0.44;
+}
+
+.our-services{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-services .pre-header{
+    justify-content: center;
+    margin: 23px 0px 60px;
+}
+
+.our-services>p{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.services-cards{
+    margin: 82px 0px 150px;
+    display: flex;
+    justify-content: center;
+    gap: 190px;
+}
+
+.card img{
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px dashed var(--accent-color);
+    max-width: 150px;
+}
+
+.card figcaption{
+    margin-top: 50px;
+    color: var(--accent-color);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+footer{
+    max-width: 1462px;
+    padding: 64px 0px;
+    margin: 0 auto;
+    display: flex;
+    gap: 200px;
+    border-top: 2px solid var(--text-color);
+}
+
+.footer-description{
+    flex: 1;
+}
+
+
+.footer-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-description div p{
+    margin-top: 24px;
+    max-width: 300px;
+    line-height: 32px;
+}
+
+.copyright{
+    opacity: 0.44;
+
+}
+
+/* Медиазапросы для планшетов */
+@media (min-width: 768px) 
+
+    .header-navigation {
+        padding: 50px;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    .pre-header {
+        letter-spacing: 6px;
+        font-size: 16px;
+    }
+
+    .pre-line {
+        width: 72px;
+        height: 8px;
+    }
+
+    .element {
+        flex-direction: row;
+    }
+
+    .element:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+    .meat-fruit-vege {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .guide .persons {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .services-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    footer {
+        flex-direction: row;
+        gap: 80px;
+    }
+
+
+/* Медиазапросы для десктопов */
+@media (min-width: 1024px) {
+    .header-navigation {
+        padding: 100px;
+    }
+
+    h1 {
+        font-size: 88px;
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+        letter-spacing: 2px;
+        justify-content: left;
+        position: absolute;
+        left: 80px;
+        top: 290px;
+    }
+
+    .social-media span {
+        writing-mode: vertical-rl;
+    }
+
+    .slider {
+        max-width: 1462px;
+    }
+
+    .slider-elements {
+        height: 720px;
+    }
+
+    .element figcaption {
+        padding: 114px;
+        gap: 27px;
+    }
+
+    .big-number {
+        font-size: 240px;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+
+    .buttons button {
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    .meat-fruit-vege {
+        max-width: 1462px;
+        margin: 120px auto;
+        flex-wrap: nowrap;
+    }
+
+    .guide .persons {
+        flex-wrap: nowrap;
+    }
+
+    .guide .person {
+        max-width: 278px;
+    }
+
+    .services-cards {
+        gap: 190px;
+        margin: 82px 0 150px;
+    }
+
+    footer {
+        max-width: 1462px;
+        padding: 64px 0;
+        gap: 200px;
+    }
+
+    .footer-description div p {
+    max-width: 300px;
+    }
